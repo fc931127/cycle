@@ -14,6 +14,7 @@
 		7AD72015207C5E58004067FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AD72013207C5E58004067FD /* LaunchScreen.storyboard */; };
 		7AD72020207C5E58004067FD /* yuanhuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD7201F207C5E58004067FD /* yuanhuTests.swift */; };
 		7AD7202B207C5E58004067FD /* yuanhuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD7202A207C5E58004067FD /* yuanhuUITests.swift */; };
+		7AD720C6207DA982004067FD /* FCCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD720C5207DA982004067FD /* FCCycleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		7AD72026207C5E58004067FD /* yuanhuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yuanhuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AD7202A207C5E58004067FD /* yuanhuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yuanhuUITests.swift; sourceTree = "<group>"; };
 		7AD7202C207C5E58004067FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AD720C5207DA982004067FD /* FCCycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCCycleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				7AD7200A207C5E58004067FD /* AppDelegate.swift */,
 				7AD7200C207C5E58004067FD /* ViewController.swift */,
+				7AD720C5207DA982004067FD /* FCCycleView.swift */,
 				7AD7200E207C5E58004067FD /* Main.storyboard */,
 				7AD72011207C5E58004067FD /* Assets.xcassets */,
 				7AD72013207C5E58004067FD /* LaunchScreen.storyboard */,
@@ -193,6 +196,7 @@
 				TargetAttributes = {
 					7AD72006207C5E58004067FD = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					7AD7201A207C5E58004067FD = {
@@ -259,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AD720C6207DA982004067FD /* FCCycleView.swift in Sources */,
 				7AD7200D207C5E58004067FD /* ViewController.swift in Sources */,
 				7AD7200B207C5E58004067FD /* AppDelegate.swift in Sources */,
 			);
@@ -426,11 +431,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = yuanhu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wyzw.ww.yuanhu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -440,11 +448,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = yuanhu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wyzw.ww.yuanhu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
